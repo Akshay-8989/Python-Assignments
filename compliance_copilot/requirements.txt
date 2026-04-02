@@ -1,0 +1,30 @@
+# GenAI Banking Policy & Compliance Copilot v3
+# Install all with:  pip install -r requirements.txt
+# No external applications needed — everything is pip installable.
+
+# ── Core UI ───────────────────────────────────────────────────────────────────
+streamlit==1.38.0
+
+# ── PDF text extraction ───────────────────────────────────────────────────────
+pypdf==4.3.1
+pdfplumber==0.11.4
+
+# ── Image OCR — pip install only, no external app needed ─────────────────────
+# EasyOCR downloads its model (~100 MB) on first use, then works offline.
+easyocr>=1.7.0
+Pillow>=10.0.0
+
+# ── FAISS vector database — offline, no internet ─────────────────────────────
+faiss-cpu>=1.7.4
+
+# ── TF-IDF + SVD embeddings — offline ────────────────────────────────────────
+scikit-learn>=1.3.0
+numpy==1.26.4
+
+# ── Phi-2 local inference ─────────────────────────────────────────────────────
+transformers>=4.40.0,<4.46.0
+torch>=2.0.0
+accelerate>=0.26.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0

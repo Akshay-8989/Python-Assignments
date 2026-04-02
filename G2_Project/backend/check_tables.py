@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from sqlalchemy import create_engine, text
 
 DATABASE_URL = "postgresql://postgres:komisan89@localhost:5433/ecommerce_reco"
@@ -11,4 +12,19 @@ with engine.connect() as conn:
     """))
 
     for row in result:
+=======
+from sqlalchemy import create_engine, text
+
+DATABASE_URL = "postgresql://postgres:komisan89@localhost:5433/ecommerce_reco"
+engine = create_engine(DATABASE_URL)
+
+with engine.connect() as conn:
+    result = conn.execute(text("""
+        SELECT table_name
+        FROM information_schema.tables
+        WHERE table_schema = 'public'
+    """))
+
+    for row in result:
+>>>>>>> 078f103c00d85cbbec5ede50581083ac1663ff12
         print(row[0])

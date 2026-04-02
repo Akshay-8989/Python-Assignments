@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fastapi
 uvicorn
 streamlit
@@ -8,4 +9,16 @@ psycopg2-binary
 python-dotenv
 scikit-learn
 numpy
+=======
+fastapi
+uvicorn
+streamlit
+requests
+pandas
+sqlalchemy
+psycopg2-binary
+python-dotenv
+scikit-learn
+numpy
+>>>>>>> 078f103c00d85cbbec5ede50581083ac1663ff12
 openpyxl
